@@ -1,109 +1,70 @@
 <!doctype html>
-<html>
+
+<html lang="en-US">
+
 <head>
-  <title>Miguel Sam Robles</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    /*const colors = require('tailwindcss/colors')
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            rose: colors.rose,
-          }
-        }
-      }
-    }*/
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Chapter 4 - Creating a responsive web newspaper layout</title>
 
+  <link rel="stylesheet" href="styles.css?v=1.0">
 
-
-      //require('@tailwindcss/forms'),
-
-
-  </script>
-    <meta
-    name="description"
-    content="programacion, buenas practicas, codigo para empresas, aplicaciones grandes"
-  />
 </head>
+
 <body>
-    <div class="bg-white">
-        <div class="relative mt-24">
-            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-4xl lg:px-8">
-                        <!-- Comment -->
-                <div class="flex flex-wrap mb-12 md:mb-0">
-                    <div class="grow-0 shrink-0 basis-auto w-2/12">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatarss/img%20(24).jpg" class="w-full shadow-lg rounded-lg mb-6"
-                        alt="" />
-                    </div>
-            
-                    <div class="sm:text-justify grow-0 shrink-0 basis-auto w-10/12 pl-4 md:pl-6">
-                    <p>
-                        Hola mi nombre es Miguel Sam Robles, padre de familia, ingeniero de software, panameno. estoy interesado en las buenas practicas de programacion orientado a empresas y miles de lineas de codigo.
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="relative mt-12">
-            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-4xl lg:px-8">
-                <div class="relative rounded-2xl px-6 py-10 bg-rose-500 overflow-hidden shadow-xl sm:px-12 sm:py-20">
-    
-                <div class="relative">
-                    <div class="sm:text-center">
-                    <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                        El futuro (ayer) es hibrido (OO + FP).
-                    </h2>
-    
-                    </div>
-                    <div class="sm:text-justify">
-                        <p class="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
-                            Combinando los diferentes paradigmas de programacion (Orientado a Objetos y Programacion Funcional) para obtener una estructura de codigo escalable, pensando en una empresa con miles de lineas de codigo (programming in the large) y cientos de programadores.
-                        </p>
-                        <p class="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
-                            visita nuestro workshop, estamos en fase beta en <a href="https://miguelsamrobles.github.io/workshop/" class="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4">estructurando codigo para empresas</a>.
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="relative mt-12">
-            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-4xl lg:px-8">
-                <div class="relative rounded-2xl px-6 py-10 bg-rose-500 overflow-hidden shadow-xl sm:px-12 sm:py-20">
-    
-                <div class="relative">
-                    <div class="sm:text-center">
-                    <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                        Que beneficios obtienen las empresas?
-                    </h2>
-    
-                    </div>
-                    <div class="sm:text-justify">
-                        <p class="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
-                            Entre los principales puntos que impactan en la empresa y su usuario final:
-                        </p>
-                        <ul class="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
-                            <li>Menores costos de mantener sus sistemas.</li>
-                            <li>Velocidad de entrega.</li>
-                            <li>Menor costo de Bugs y su impacto negativo.</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        
-
-
-
-        
-    </div>
+  <h1>Newspaper Title</h1>
+  <div class="time">
+    <time datetime="2021-09-07">Tuesday, 5<sup>th</sup> September 2021</time>
+  </div>
+  <article>
+    <h2>Article heading</h2>
+    <div class="author">John Doe</div>
+    <p>Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at
+      lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Curabitur blandit tempus porttitor.</p>
+    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Cum
+      sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel
+      augue laoreet rutrum faucibus
+      dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    <blockquote>
+      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+      risus.
+    </blockquote>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+      eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac
+      facilisis in, egestas eget
+      quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      Cras mattis consectetur purus sit amet fermentum.</p>
+    <h3>Subheading</h3>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis
+      dis parturient montes,
+      nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <p>Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+      venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed
+      consectetur.</p>
+    <h3>Subheading</h3>
+    <figure>
+      <img src="./image.jpg" alt="" onerror="this.style.display='none'">
+      <figcaption>Golden Gate Bridge</figcaption>
+    </figure>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem
+      lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum
+      nulla sed consectetur. Integer
+      posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia
+      quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Morbi leo
+      risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor
+      ligula, eget lacinia odio sem
+      nec elit.</p>
+  </article>
 </body>
+
 </html>
